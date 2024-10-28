@@ -1,9 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import './navbar.css';
 import juice from './image.png';
+import { refcontext } from './App';
 function NavBar() {
   const refNav = useRef();
-  
+  const {secTextVoiceRef, secVoiceAIRef, secFlexPanelRef, secGhostRef, secJokeRef } = useContext(refcontext);
   useEffect(() => {
     const nav = refNav.current;
     const topNav = nav.offsetTop;
@@ -22,17 +23,19 @@ function NavBar() {
 
     window.addEventListener('scroll', fixNav);
   }, []);
- 
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section>
       <img src={juice} alt="hgh" />
       <ul style={{ zIndex: 1 }} ref={refNav} className="navbar">
         <li className="active">hey THERE!!!</li>
-        <li>TEXT-VOICE</li>
-        <li>voiceAI</li>
-        <li >Flex-Panel</li>
-        <li>Chaotic Ghost</li>
-        <li>Joke corner </li>
+        <li onClick={() => scrollToSection(secTextVoiceRef)}>TEXT-VOICE</li>
+        <li onClick={() => scrollToSection(secVoiceAIRef)}>voiceAI</li>
+        <li onClick={() => scrollToSection(secFlexPanelRef)}>Flex-Panel</li>
+        <li onClick={() => scrollToSection(secGhostRef)}>Chaotic Ghost</li>
+        <li onClick={() => scrollToSection(secJokeRef)}>Joke corner </li>
       </ul>
     </section>
   );

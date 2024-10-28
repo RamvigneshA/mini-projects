@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './voicenator.css';
+import { refcontext } from './App';
 
 function Voicenator() {
   const [voices, setVoice] = useState([]);
+  const {secTextVoiceRef } = useContext(refcontext);
+
   const [TextValue, setTextValue] = useState(
     'Hi! I am Voicenator🇮🇳, I can convert text to voice.'
   );
@@ -44,7 +47,7 @@ function Voicenator() {
 
   return (
     <>
-      <section className='voicenatorSec'>
+      <section ref={secTextVoiceRef} className='voicenatorSec'>
       <div className="voicenator">
         <h1>
           <em>Voicenator</em>

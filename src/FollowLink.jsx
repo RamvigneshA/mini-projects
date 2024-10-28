@@ -1,9 +1,12 @@
-import  { useEffect, useRef } from 'react';
+import  { useContext, useEffect, useRef } from 'react';
 import './follow.css';
+import { refcontext } from './App';
 
 function FollowLink() {
   const refA = useRef();
   const refSpan = useRef();
+  const { secJokeRef } = useContext(refcontext);
+
   useEffect(() => {
     const a = refA.current.querySelectorAll('a');
     const highlight = refSpan.current;
@@ -30,7 +33,7 @@ function FollowLink() {
   }, []);
 
   return (
-    <section  className="follow">
+    <section ref={secJokeRef}  className="follow">
       <span style={{position:'absolute'}} ref={refSpan} className='highlight'></span>
       <nav style={{ position: 'relative' }} ref={refA}>
         <p style={{fontSize:"50px"}}>Joke Corner </p>

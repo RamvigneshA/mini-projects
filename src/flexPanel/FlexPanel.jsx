@@ -4,9 +4,13 @@ import giraff from './giraff.png';
 import avatar from './avatar.png';
 import wolf from './wolf.png';
 import './flexPanel.css';
+import { useContext } from 'react';
+import { refcontext } from '../App';
 const FlexPanel = () => {
+  const {secFlexPanelRef} = useContext(refcontext);
+
   return (
-    <section className='flexPanelSection'>
+    <section ref={secFlexPanelRef} className='flexPanelSection'>
       <div className="panels-container">
         <div className="panel" style={{ backgroundImage: `url(${wolf})` }}>
           <p>Hey</p>

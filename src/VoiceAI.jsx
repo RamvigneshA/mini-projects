@@ -1,6 +1,6 @@
-import  { useEffect, useRef,  } from 'react';
+import  { useContext, useEffect, useRef,  } from 'react';
 import './voiceai.css';
-
+import { refcontext } from './App';
 window.SpeechRecognition =
 window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -10,6 +10,7 @@ recognition.interimResults = true;
 
 function VoiceAI() {
   const wordsRef = useRef(null);
+  const {secVoiceAIRef } = useContext(refcontext);
 
   useEffect(() => {
 
@@ -44,7 +45,7 @@ function VoiceAI() {
 
   return (
     <>
-      <section  className='sectionVoiceAI' >
+      <section ref={secVoiceAIRef} className='sectionVoiceAI' >
       <header>
         <h1>VoiceAI</h1>
         <span>Your Voice, Your Text</span>

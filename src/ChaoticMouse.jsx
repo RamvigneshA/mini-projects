@@ -1,6 +1,9 @@
-import  { useEffect, useRef } from 'react'
+import  { useContext, useEffect, useRef } from 'react'
 import './chaotic.css'
+import { refcontext } from './App';
 function ChaoticMouse() {
+  const {secGhostRef} = useContext(refcontext);
+
   const bref = useRef();
   const tref = useRef();
 
@@ -34,13 +37,14 @@ body.addEventListener("mousemove", move);
 
 
   return (
-    
-    <div style={{position:'relative'}} className='bodyy' ref={bref} >
+    <section ref={secGhostRef}>
+    <div  style={{position:'relative'}} className='bodyy' ref={bref} >
       <h1 style={{position:'absolute'}} className="txt" ref={tref} >
       👻
       </h1>
 
       </div>
+      </section>
   )
 }
 

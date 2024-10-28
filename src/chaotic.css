@@ -1,0 +1,18 @@
+
+.bodyy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:rgb(250, 240, 240);
+
+}
+
+
+
+.txt{
+  font-size: 90px;
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+
+} 

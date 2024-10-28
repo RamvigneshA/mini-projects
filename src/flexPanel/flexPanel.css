@@ -50,10 +50,10 @@
   transition-timing-function: cubic-bezier(0.04, 1.42, 0.46, 1.05);
 
 }
-.panel > *:first-child { transform: translateY(-100%);}
+.panel > *:first-child { font-size: 40px; transform: translateY(-100%);}
 .panel.active> *:first-child { transform: translateY(0);}
 
 
-.panel > *:last-child{transform: translateY(100%);}
+.panel > *:last-child{ font-size: 40px; transform: translateY(100%);}
 .panel.active > *:last-child{transform: translateY(0);}
 

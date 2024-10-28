@@ -30,7 +30,7 @@ const FlexPanel = () => {
         <div className="panel" style={{ backgroundImage: `url(${dolfin})` }}>
           <p>Give</p>
           <p style={{ fontSize: '1.8rem' }}>All</p>
-          <p style={{ fontSize: '0.9rem' }}>you can</p>
+          <p>you can</p>
         </div>
         <div className="panel " style={{ backgroundImage: `url(${giraff})` }}>
           <p>Life</p>

@@ -36,7 +36,7 @@ function FollowLink() {
     <section ref={secJokeRef}  className="follow">
       <span style={{position:'absolute'}} ref={refSpan} className='highlight'></span>
       <nav style={{ position: 'relative' }} ref={refA}>
-        <p style={{fontSize:"50px"}}>Joke Corner </p>
+        <p style={{fontSize:"40px"}}>Joke Corner </p>
         <a href="1">Why do Programmers prefer dark mode..??</a>
         <a href="3">Because light attracts bugs!</a>
       </nav>

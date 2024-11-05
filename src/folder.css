@@ -1,0 +1,35 @@
+.fileSec{
+  min-height: 50vh;
+  background-color: darkslategrey;
+  font-family: monospace;
+  header{
+    color: aliceblue;
+  }
+}
+.fileExplorer{
+  width: 50%;
+}
+.pageFile{
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+
+}
+.directory{
+  border: 2px solid black;
+
+}
+.file{
+  background-color: #ad9f9f;
+  border: 1px solid black;
+  margin-right: 4px;
+}
+.folder{
+  background-color: #ad9f9f;
+  border: 1px solid black;
+
+
+}
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+}

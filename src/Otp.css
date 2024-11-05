@@ -1,0 +1,46 @@
+
+.Otp{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  input[type=text] {
+    width: 40px;
+    font-size: 30px;
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    margin-right: 2px;
+ 
+  }
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10% ;
+  }
+  h1{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    background-color: blueviolet;
+    width: 100vw;
+    
+  }
+  input:focus{
+    background-color: aquamarine;
+  }
+  #number{
+   width: 300px;
+   font-size: 20px;
+  }
+
+.success{
+    margin-top: 20px;
+  }
+  .fail{
+    margin-top: 20px;
+  }
+}
+
+.otpbox{
+  display: flex;
+}

@@ -1,6 +1,6 @@
 
   .follow{
-      background: #e8e530;
+      background: rgb(241, 136, 87);
       margin :0;
   
   }
@@ -17,14 +17,14 @@
   }
   a{
       text-decoration: none; justify-content: center;
-      align-items: center;
-      color: #e8e530;
+      /* align-items: center; */
+      color: rgb(241, 136, 87);
       padding: 0 8px;
       transition: all 0.2s ease-in-out;
       font-size: 3rem;
   }
   .content{
-  margin: 0 20px;
+  margin: 0 10px;
   }
   
   .highlight{

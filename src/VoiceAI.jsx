@@ -46,10 +46,10 @@ function VoiceAI() {
   return (
     <>
       <section ref={secVoiceAIRef} className='sectionVoiceAI' >
-      <header>
-        <h1>VoiceAI</h1>
+      <div>
+        <h1 style={{fontSize:50}}>VoiceAI</h1>
         <span>Your Voice, Your Text</span>
-      </header>
+      </div>
         <div className="words" ref={wordsRef} contentEditable></div>
         <button onClick={start}>start</button>
         <button onClick={sttop}>stop</button>

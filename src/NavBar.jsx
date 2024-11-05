@@ -1,5 +1,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import './navbar.css';
+import { Typing } from './typing';
+
 import juice from './image.png';
 import { refcontext } from './App';
 function NavBar() {
@@ -28,9 +30,9 @@ function NavBar() {
   };
   return (
     <section>
-      <img src={juice} alt="hgh" />
+      <Typing/>
       <ul style={{ zIndex: 1 }} ref={refNav} className="navbar">
-        <li className="active">hey THERE!!!</li>
+        <li style={{fontSize:50}} className="active">☕</li>
         <li onClick={() => scrollToSection(secTextVoiceRef)}>TEXT-VOICE</li>
         <li onClick={() => scrollToSection(secVoiceAIRef)}>voiceAI</li>
         <li onClick={() => scrollToSection(secFlexPanelRef)}>Flex-Panel</li>

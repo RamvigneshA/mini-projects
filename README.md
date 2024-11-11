@@ -4,14 +4,15 @@
 A comprehensive web application showcasing various interactive features and css projects
 
 
-## Screenshots
+## Sample Screenshots
 
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/RamvigneshA/mini-projects/blob/master/Screenshot%20from%202024-11-11%2017-41-47.png?raw=true)
+![App Screenshot](https://github.com/RamvigneshA/mini-projects/blob/master/Screenshot%20from%202024-11-11%2017-41-57.png?raw=true)
+![App Screenshot](https://github.com/RamvigneshA/mini-projects/blob/master/Screenshot%20from%202024-11-11%2017-42-43.png?raw=true)
+![App Screenshot](https://github.com/RamvigneshA/mini-projects/blob/master/Screenshot%20from%202024-11-11%2017-47-31.png?raw=true)
+![App Screenshot](https://github.com/RamvigneshA/mini-projects/blob/master/Screenshot%20from%202024-11-11%2017-44-32.png?raw=true)
+
+
 
 
 ## Tech Stack
